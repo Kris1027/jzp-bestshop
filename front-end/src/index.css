@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  @apply text-textBlack;
+  @apply border-b-4;
+  @apply border-textBlack;
+}
