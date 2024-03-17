@@ -3,7 +3,7 @@ import CAR_ICON from "../assets/car.svg";
 
 export function BagSummary() {
   return (
-    <div className="w-[432px]">
+    <div className="w-[432px] px-4">
       <h3 className="font-bold text-[24px] border-b-2 py-2">Podsumowanie</h3>
       <div className="flex justify-between pt-4">
         <p>Wartość produktów:</p>
