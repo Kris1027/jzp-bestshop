@@ -17,7 +17,7 @@ export function IconList() {
         </Link>
       </li>
       <li className="relative">
-        <Link to="cart">
+        <Link to="bag">
           <img src={BAG_ICON} />
           <div className="absolute -bottom-2 -right-2 w-5 h-5 bg-bgYellow flex justify-center items-center rounded-lg p-2">
             {bagItems}
