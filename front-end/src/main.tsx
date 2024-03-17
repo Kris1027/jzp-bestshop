@@ -6,6 +6,7 @@ import { Layout } from "./components/Layout";
 import { MainPage } from "./views/MainPage";
 import { Favourites } from "./views/Favourites";
 import { Bag } from "./views/Bag";
+import { ProductsList } from "./views/ProductsList";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "bag",
         element: <Bag />,
+      },
+      {
+        path: ":gender?/:category?",
+        element: <ProductsList />,
       },
     ],
   },
