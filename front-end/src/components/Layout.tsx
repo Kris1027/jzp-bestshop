@@ -1,22 +1,22 @@
 import { Outlet } from "react-router-dom";
 import { MainMenu } from "./header/MainMenu";
-import { MainContent } from "./header/MainContent";
 import { Logo } from "./header/Logo";
 import { FlexContainer } from "./FlexContainer";
 import { IconList } from "./header/IconList";
+import { Footer } from "./footer/Footer";
 
 export function Layout() {
   return (
-    <FlexContainer>
-      <MainContent>
+    <>
+      <FlexContainer>
         <MainMenu />
         <Logo />
         <IconList />
-      </MainContent>
-      <main>
+      </FlexContainer>
+      <FlexContainer>
         <Outlet />
-      </main>
-      <footer>footer</footer>
-    </FlexContainer>
+      </FlexContainer>
+      <Footer />
+    </>
   );
 }

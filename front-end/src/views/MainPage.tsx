@@ -1,3 +1,3 @@
 export function MainPage() {
-  return <div>start</div>;
+  return <main className="flex-1">start</main>;
 }
