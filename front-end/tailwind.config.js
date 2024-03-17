@@ -6,6 +6,7 @@ export default {
       colors: {
         textGrey: "#7A7A7A",
         textBlack: "#222020",
+        textRed: "#C60C0C",
         bgGrey: "#EFEFEF",
         bgDarkGrey: "#767676",
         bgYellow: "#FFDE00",
