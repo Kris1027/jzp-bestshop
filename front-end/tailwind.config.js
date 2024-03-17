@@ -9,6 +9,7 @@ export default {
         bgGrey: "#EFEFEF",
         bgDarkGrey: "#767676",
         bgYellow: "#FFDE00",
+        bgGreen: "#056943",
       },
       fontSize: {
         heading: "2rem",

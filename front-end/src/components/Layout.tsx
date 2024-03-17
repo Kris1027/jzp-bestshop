@@ -1,21 +1,26 @@
 import { Outlet } from "react-router-dom";
 import { MainMenu } from "./header/MainMenu";
 import { Logo } from "./header/Logo";
-import { FlexContainer } from "./FlexContainer";
 import { IconList } from "./header/IconList";
 import { Footer } from "./footer/Footer";
+import { CategoryMenu } from "./header/CategoryMenu";
+import { Wrapper } from "./Wrapper";
+import { MainContent } from "./header/MainContent";
 
 export function Layout() {
   return (
     <>
-      <FlexContainer>
-        <MainMenu />
-        <Logo />
-        <IconList />
-      </FlexContainer>
-      <FlexContainer>
+      <Wrapper>
+        <MainContent>
+          <MainMenu />
+          <Logo />
+          <IconList />
+        </MainContent>
+      </Wrapper>
+      <CategoryMenu />
+      <Wrapper>
         <Outlet />
-      </FlexContainer>
+      </Wrapper>
       <Footer />
     </>
   );

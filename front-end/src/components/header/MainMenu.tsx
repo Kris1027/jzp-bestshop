@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { GENDERS, type GenderProps } from "../../constants/categories";
+import { GENDERS } from "../../constants/categories";
 
 export function MainMenu() {
   return (
     <ul className="uppercase flex gap-4 py-4">
-      {GENDERS.map((gender: GenderProps) => {
+      {GENDERS.map((gender) => {
         return (
           <li key={gender.path}>
             <NavLink
