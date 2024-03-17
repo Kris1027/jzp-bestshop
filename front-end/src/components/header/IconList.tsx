@@ -12,12 +12,12 @@ export function IconList() {
         <CurrencySwitcher />
       </li>
       <li>
-        <Link to="#">
+        <Link to="favourites">
           <img src={HEART_ICON} />
         </Link>
       </li>
       <li className="relative">
-        <Link to="#">
+        <Link to="cart">
           <img src={BAG_ICON} />
           <div className="absolute -bottom-2 -right-2 w-5 h-5 bg-bgYellow flex justify-center items-center rounded-lg p-2">
             {bagItems}
