@@ -17,6 +17,9 @@ export default {
       fontFamily: {
         sans: ["Arial", "sans-serif"],
       },
+      backgroundImage: {
+        "hero-pattern": "url('./src/assets/logo.jpeg')",
+      },
     },
   },
   plugins: [],
