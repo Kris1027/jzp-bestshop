@@ -8,6 +8,7 @@ export default {
         textBlack: "#222020",
         bgGrey: "#EFEFEF",
         bgDarkGrey: "#767676",
+        bgYellow: "#FFDE00",
       },
       fontSize: {
         heading: "2rem",

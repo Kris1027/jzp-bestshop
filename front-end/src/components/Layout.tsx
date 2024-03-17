@@ -2,8 +2,8 @@ import { Outlet } from "react-router-dom";
 import { MainMenu } from "./header/MainMenu";
 import { MainContent } from "./header/MainContent";
 import { Logo } from "./header/Logo";
-import { List } from "./header/List";
 import { FlexContainer } from "./FlexContainer";
+import { IconList } from "./header/IconList";
 
 export function Layout() {
   return (
@@ -11,7 +11,7 @@ export function Layout() {
       <MainContent>
         <MainMenu />
         <Logo />
-        <List />
+        <IconList />
       </MainContent>
       <main>
         <Outlet />
