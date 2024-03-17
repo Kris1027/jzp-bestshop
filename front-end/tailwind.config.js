@@ -8,6 +8,7 @@ export default {
         textBlack: "#222020",
         textRed: "#C60C0C",
         bgGrey: "#EFEFEF",
+        bgLightGrey: "#F4F4F4",
         bgDarkGrey: "#767676",
         bgYellow: "#FFDE00",
         bgGreen: "#056943",

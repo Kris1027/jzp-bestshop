@@ -4,6 +4,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { MainPage } from "./views/MainPage";
+import { Favourites } from "./views/Favourites";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: ":gender?",
         element: <MainPage />,
+      },
+      {
+        path: "favourites",
+        element: <Favourites />,
       },
     ],
   },

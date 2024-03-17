@@ -3,7 +3,7 @@ import { Hero } from "../components/header/Hero";
 
 export function MainPage() {
   return (
-    <main className="flex-1">
+    <main>
       <Hero />
       <Bestsellers />
     </main>
