@@ -7,6 +7,7 @@ import { MainPage } from "./views/MainPage";
 import { Favourites } from "./views/Favourites";
 import { Bag } from "./views/Bag";
 import { ProductsList } from "./views/ProductsList";
+import { ProductDetails } from "./views/ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: ":gender?/:category?",
         element: <ProductsList />,
+      },
+      {
+        path: ":gender?/:category?/:productId",
+        element: <ProductDetails />,
       },
     ],
   },
