@@ -1,4 +1,5 @@
 import { Breadcrumbs } from "../components/Breadcrumbs";
+import { CategoryMenu } from "../components/CategoryMenu";
 import { ProductsContainer } from "../components/ProductsContainer";
 import { type ProductsProps } from "../types/product";
 
@@ -159,9 +160,12 @@ export function ProductsList() {
   ];
 
   return (
-    <main className="px-4">
-      <Breadcrumbs />
-      <ProductsContainer products={products} />
+    <main className="px-4 flex">
+      <CategoryMenu />
+      <div>
+        <Breadcrumbs />
+        <ProductsContainer products={products} />
+      </div>
     </main>
   );
 }

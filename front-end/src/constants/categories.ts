@@ -3,10 +3,15 @@ export type GenderProps = {
   path: string;
 };
 
+export type SubcategoriesProps = {
+  categoryName: string;
+  path: string;
+};
+
 export type CategoriesProps = {
   categoryName: string;
   path: string;
-  subcategories: object;
+  subcategories: SubcategoriesProps[];
 };
 
 export const GENDERS: GenderProps[] = [
