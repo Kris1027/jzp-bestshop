@@ -18,7 +18,7 @@ export function BagSummary() {
         <p>447zł</p>
       </div>
       <div>
-        <FullWidthButton>do kasy</FullWidthButton>
+        <FullWidthButton variant="black">do kasy</FullWidthButton>
       </div>
       <div className="flex justify-between mt-4 p-4 bg-bgGrey">
         <img src={CAR_ICON} />
