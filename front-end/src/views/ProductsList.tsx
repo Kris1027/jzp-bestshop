@@ -1,5 +1,6 @@
 import { Breadcrumbs } from "../components/Breadcrumbs";
 import { CategoryMenu } from "../components/CategoryMenu";
+import { Pagination } from "../components/Pagination";
 import { ProductsContainer } from "../components/ProductsContainer";
 import { type ProductsProps } from "../types/product";
 
@@ -165,6 +166,7 @@ export function ProductsList() {
       <div>
         <Breadcrumbs />
         <ProductsContainer products={products} />
+        <Pagination />
       </div>
     </main>
   );
