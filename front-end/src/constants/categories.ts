@@ -6,17 +6,49 @@ export type GenderProps = {
 export type CategoriesProps = {
   categoryName: string;
   path: string;
+  subcategories: object;
 };
 
 export const GENDERS: GenderProps[] = [
-  { genderName: "kobieta", path: "/woman" },
-  { genderName: "mężczyzna", path: "/man" },
-  { genderName: "dziecko", path: "/children" },
+  { genderName: "Kobieta", path: "woman" },
+  { genderName: "Mężczyzna", path: "man" },
+  { genderName: "Dziecko", path: "children" },
 ];
 
 export const CATEGORIES: CategoriesProps[] = [
-  { categoryName: "Odzież", path: "odziez" },
-  { categoryName: "Obuwie", path: "obuwie" },
-  { categoryName: "Akcesoria", path: "akcesoria" },
-  { categoryName: "Sport", path: "sport" },
+  {
+    categoryName: "Odzież",
+    path: "odziez",
+    subcategories: [
+      { categoryName: "Koszulki", path: "koszulki" },
+      { categoryName: "Swetry", path: "swetry" },
+      { categoryName: "Spodnie", path: "spodnie" },
+    ],
+  },
+  {
+    categoryName: "Obuwie",
+    path: "obuwie",
+    subcategories: [
+      { categoryName: "Eleganckie", path: "eleganckie" },
+      { categoryName: "Sportowe", path: "sportowe" },
+      { categoryName: "Sneakersy", path: "sneakersy" },
+    ],
+  },
+  {
+    categoryName: "Akcesoria",
+    path: "akcesoria",
+    subcategories: [
+      { categoryName: "Torby", path: "torby" },
+      { categoryName: "zegarki", path: "Zegarki" },
+    ],
+  },
+  {
+    categoryName: "Sport",
+    path: "sport",
+    subcategories: [
+      { categoryName: "Piłka Nożna", path: "pilkanozna" },
+      { categoryName: "Narty", path: "narty" },
+      { categoryName: "Pływanie", path: "plywanie" },
+    ],
+  },
 ];
