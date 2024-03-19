@@ -23,7 +23,11 @@ export function Breadcrumbs() {
         return (
           <li key={index}>
             <NavLink
-              className="flex items-center gap-2"
+              className={({ isActive }) =>
+                isActive
+                  ? "flex items-center gap-2 font-bold"
+                  : "flex items-center gap-2"
+              }
               end
               to={breadcrumb.path}
             >

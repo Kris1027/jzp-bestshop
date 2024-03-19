@@ -12,6 +12,9 @@ export function CategoryMenu() {
             <NavLink
               key={category.path}
               to={`${params.gender}/${category.path}`}
+              className={({ isActive }) =>
+                isActive ? "border-b-2" : "border-b-2 border-transparent"
+              }
             >
               <li>{category.categoryName}</li>
             </NavLink>
