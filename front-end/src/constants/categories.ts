@@ -15,9 +15,9 @@ export type CategoriesProps = {
 };
 
 export const GENDERS: GenderProps[] = [
-  { genderName: "Kobieta", path: "woman" },
-  { genderName: "Mężczyzna", path: "man" },
-  { genderName: "Dziecko", path: "children" },
+  { genderName: "Kobieta", path: "kobieta" },
+  { genderName: "Mężczyzna", path: "mezczyzna" },
+  { genderName: "Dziecko", path: "dziecko" },
 ];
 
 export const CATEGORIES: CategoriesProps[] = [
