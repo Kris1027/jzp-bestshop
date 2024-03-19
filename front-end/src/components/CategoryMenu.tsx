@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export function CategoryMenu() {
   return (
-    <div className="flex flex-col pt-4 w-[300px]">
+    <div className="flex flex-col p-4 w-[200px]">
       <h2 className="font-bold">Kobieta</h2>
       <ul className="pt-4 px-4">
         {CATEGORIES.map((category) => {
