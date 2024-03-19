@@ -3,28 +3,9 @@ import CAR_ICON from "../assets/car.svg";
 import RETURN_ICON from "../assets/return.svg";
 import { useState } from "react";
 import { ProductsProps } from "../types/product";
+import { Accordion } from "./Accordion";
 
-export function Product() {
-  const product: ProductsProps = {
-    id: 1,
-    gender: "men",
-    category: "odziez",
-    subcategory: "koszulki",
-    productName: "T-Shirt",
-    brand: "Top Brand",
-    pricePLN: 49,
-    priceUSD: 10,
-    photos: [
-      "http://localhost:3000/product-photos/man-t-shirt-1.jpg",
-      "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
-      "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
-    ],
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
-    maintenanceInfo:
-      "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu",
-  };
-
+export function Product({ product }: { product: ProductsProps }) {
   const [photo, setPhoto] = useState<number>(0);
 
   return (
@@ -55,10 +36,11 @@ export function Product() {
           <img src={CAR_ICON} />
           <span>Dostawa do 24h</span>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 pb-8">
           <img src={RETURN_ICON} />
           <span>Zwrot do 100 dni</span>
         </div>
+        <Accordion product={product} />
       </div>
     </div>
   );
