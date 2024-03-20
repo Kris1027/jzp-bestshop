@@ -14,6 +14,7 @@ export function ExpandableMenu() {
   console.log(params);
 
   const isActive = params.category;
+  const isActiveSubcategory = params.subcategory;
 
   return (
     <div className="flex flex-col p-4">
@@ -44,6 +45,11 @@ export function ExpandableMenu() {
                     return (
                       <li key={subcategory.categoryName}>
                         <NavLink
+                          className={
+                            isActiveSubcategory === subcategory.path
+                              ? "font-bold"
+                              : ""
+                          }
                           to={`/${params.gender}/${category.path}/${subcategory.path}`}
                         >
                           {subcategory.categoryName}

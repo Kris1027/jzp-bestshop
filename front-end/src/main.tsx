@@ -8,6 +8,7 @@ import { Favourites } from "./views/Favourites";
 import { Bag } from "./views/Bag";
 import { ProductsList } from "./views/ProductsList";
 import { mainPageLoader } from "./components/api/mainPageLoader";
+import { productsListLoader } from "./components/api/productsListLoader";
 
 const router = createBrowserRouter([
   {
@@ -28,8 +29,9 @@ const router = createBrowserRouter([
         loader: mainPageLoader, //fix problem with types
       },
       {
-        path: ":gender/:category/",
+        path: ":gender/:category/:subcategory?",
         element: <ProductsList />,
+        loader: productsListLoader,
       },
     ],
   },

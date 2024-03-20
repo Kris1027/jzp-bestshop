@@ -44,7 +44,7 @@ export const CATEGORIES: CategoriesProps[] = [
     path: "akcesoria",
     subcategories: [
       { categoryName: "Torby", path: "torby" },
-      { categoryName: "zegarki", path: "Zegarki" },
+      { categoryName: "Zegarki", path: "zegarki" },
     ],
   },
   {
