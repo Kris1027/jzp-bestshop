@@ -7,7 +7,6 @@ import { MainPage } from "./views/MainPage";
 import { Favourites } from "./views/Favourites";
 import { Bag } from "./views/Bag";
 import { ProductsList } from "./views/ProductsList";
-import { ProductDetails } from "./views/ProductDetails";
 import { mainPageLoader } from "./components/api/mainPageLoader";
 
 const router = createBrowserRouter([
@@ -15,11 +14,6 @@ const router = createBrowserRouter([
     path: "",
     element: <Layout />,
     children: [
-      {
-        path: ":gender?",
-        element: <MainPage />,
-        loader: mainPageLoader, //fix problem with types
-      },
       {
         path: "favourites",
         element: <Favourites />,
@@ -29,12 +23,13 @@ const router = createBrowserRouter([
         element: <Bag />,
       },
       {
-        path: ":gender?/:category/:subcategory?",
-        element: <ProductsList />,
+        path: ":gender",
+        element: <MainPage />,
+        loader: mainPageLoader, //fix problem with types
       },
       {
-        path: ":gender?/:category/:subcategory/:productId",
-        element: <ProductDetails />,
+        path: ":gender/:category/",
+        element: <ProductsList />,
       },
     ],
   },

@@ -1,5 +1,5 @@
 import { Breadcrumbs } from "../components/Breadcrumbs";
-import { CategoryMenu } from "../components/CategoryMenu";
+import { ExpandableMenu } from "../components/ExpandableMenu";
 import { Pagination } from "../components/Pagination";
 import { ProductsContainer } from "../components/ProductsContainer";
 import { type ProductsProps } from "../types/product";
@@ -162,7 +162,7 @@ export function ProductsList() {
 
   return (
     <main className="px-4 flex">
-      <CategoryMenu />
+      <ExpandableMenu />
       <div>
         <Breadcrumbs />
         <ProductsContainer products={products} />

@@ -1,5 +1,5 @@
 import { Breadcrumbs } from "../components/Breadcrumbs";
-import { CategoryMenu } from "../components/CategoryMenu";
+import { ExpandableMenu } from "../components/ExpandableMenu";
 import { Product } from "../components/Product";
 import { type ProductsProps } from "../types/product";
 
@@ -26,7 +26,7 @@ export function ProductDetails() {
 
   return (
     <div className="flex">
-      <CategoryMenu />
+      <ExpandableMenu />
       <div className="flex-1">
         <Breadcrumbs />
         <Product product={product} />
