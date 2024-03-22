@@ -49,7 +49,7 @@ export function BagProductsList() {
         <h2 className="px-4 pt-4 text-[24px] font-bold">Ulubione</h2>
         <ul className="px-4">
           {products.map((product) => {
-            return <BagProduct product={product} />;
+            return <BagProduct product={product} key={product.id} />;
           })}
         </ul>
       </div>
