@@ -11,11 +11,11 @@ export function Product({ product }: { product: ProductsProps }) {
   return (
     <div className="flex items-start p-4 gap-4">
       <div className="flex flex-col gap-4">
-        {product.photos.map((photo: string) => {
+        {product.photos.map((photo: string, index) => {
           return (
             <img
               className="w-[85px] h-[120px]"
-              key={photo}
+              key={index}
               onClick={() => setPhoto(product.photos.indexOf(photo))}
               src={photo}
             />
