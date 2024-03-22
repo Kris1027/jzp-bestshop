@@ -9,6 +9,8 @@ import { Bag } from "./views/Bag";
 import { ProductsList } from "./views/ProductsList";
 import { mainPageLoader } from "./components/api/mainPageLoader";
 import { productsListLoader } from "./components/api/productsListLoader";
+import { ProductDetails } from "./views/ProductDetails";
+import { productLoader } from "./components/api/productLoader";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,11 @@ const router = createBrowserRouter([
         path: ":gender/:category/:subcategory?",
         element: <ProductsList />,
         loader: productsListLoader,
+      },
+      {
+        path: ":gender/:category?/:subcategory?/:productId",
+        element: <ProductDetails />,
+        loader: productLoader,
       },
     ],
   },
