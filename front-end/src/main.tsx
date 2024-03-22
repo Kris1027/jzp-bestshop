@@ -11,6 +11,7 @@ import { mainPageLoader } from "./components/api/mainPageLoader";
 import { productsListLoader } from "./components/api/productsListLoader";
 import { ProductDetails } from "./views/ProductDetails";
 import { productLoader } from "./components/api/productLoader";
+import { favouritesLoader } from "./components/api/favouritesLoader";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       {
         path: "favourites",
         element: <Favourites />,
+        loader: favouritesLoader,
       },
       {
         path: "bag",

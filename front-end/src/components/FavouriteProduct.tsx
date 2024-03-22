@@ -2,9 +2,15 @@ import { ProductsProps } from "../types/product";
 import CLOSE_ICON from "../assets/vector.svg";
 import HEART_ICON from "../assets/heart.svg";
 
-export function FavouriteProduct({ product }: { product: ProductsProps }) {
+export function FavouriteProduct({
+  favourite,
+}: {
+  favourite: { product: ProductsProps };
+}) {
+  const product = favourite.product;
+
   return (
-    <li className="flex border-t-2 gap-6 py-4" key={product.id}>
+    <li className="flex border-t-2 gap-6 py-4">
       <div>
         <img
           className="h-[140px] w-[85px]"
