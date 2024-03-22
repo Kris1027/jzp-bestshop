@@ -2,9 +2,19 @@ import { redirect } from "react-router-dom";
 import { BACK_END_URL, PATH_MAPPING } from "../../constants/api";
 import { CATEGORIES } from "../../constants/categories";
 
+type Props = {
+  gender: string;
+  category: string;
+  subcategory?: string;
+};
+
+type ParamsProps = {
+  params: Props;
+};
+
 export function productsListLoader({
   params: { gender, category, subcategory },
-}) {
+}: ParamsProps) {
   const backEndPath = PATH_MAPPING[gender];
 
   const foundCategory = CATEGORIES.find((c) => c.path === category);
